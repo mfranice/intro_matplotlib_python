@@ -38,12 +38,22 @@ if __name__ == '__main__':
     # Realizar un gráfico que representen las dos funciones
     # Para ello se debe llamar dos veces a "plot" con el mismo "ax"
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
     # Se debe colocar en la leyenda la función que representa
     # cada función
+
+    ax.plot(x, y1, color='r', marker='^', label='y=x^2')
+    ax.plot(x, y2, color='g', label='y=x^3')
+
+    ax.legend()
 
     # Cada función dibujarla con un color distinto
     # a su elección
 
     # Crear acá su gráfico
+
+    plt.show()
 
     print("terminamos")

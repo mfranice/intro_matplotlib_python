@@ -33,9 +33,19 @@ if __name__ == '__main__':
     # Crear una "figura" y crear un "ax" con add_subplot
     # Graficar el "line plot" de "y" en función de "x"
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
     # Colocar la leyenda y el label con el nombre de la función
     # Darle color a la línea a su elección
 
+    ax.set_title('Gráfico de la función: y=x^2')
+    ax.set_ylabel('y=x^2')
+    ax.set_xlabel('x')
+    ax.plot(x, y, color = 'y')
+
     # Crear acá su gráfico
+
+    plt.show()
 
     print("terminamos")

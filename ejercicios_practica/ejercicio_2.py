@@ -48,6 +48,7 @@ if __name__ == '__main__':
     ax.plot(x, y2, color='g', label='y=x^3')
 
     ax.legend()
+    ax.grid()
 
     # Cada función dibujarla con un color distinto
     # a su elección

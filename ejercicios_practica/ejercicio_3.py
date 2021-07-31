@@ -27,11 +27,18 @@ if __name__ == '__main__':
 
     # Graficar la función utilizando "scatter"
     # utilizando "x" e "y"
+    
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.scatter(x,y, marker='.', label='y=tanh(x)')
 
     # Colocar la leyenda y el label con el nombre de la función
+
+    fig.suptitle('Gráfico de función y=tanh(x) con scatter')
 
     # Elegir un marker a elección
 
     # Crear acá su gráfico
 
+    plt.show()
     print("terminamos")

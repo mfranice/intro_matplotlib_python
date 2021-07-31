@@ -18,16 +18,18 @@ for i in x:
     y1.append(a)
 
 fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1)
-ax2 = fig.add_subplot(2, 2, 2)
 
-ax.plot(x,y, color = 'r', marker = '^')
+ax = fig.add_subplot(1, 2, 1)
+ax2 = fig.add_subplot(1, 2, 2)
+
+ax.plot(x,y, color='r', marker='^')
+ax2.plot(x,y1, color='y', marker='o')
 
 ax.set_facecolor('lightgray')
 ax.set_title('Gráfico de prueba')
 ax.set_ylabel('Seno')
 ax.set_xlabel('Secuencia')
-#ax.set_grid('darkred')
+ax.grid()
 
 plt.show()
 

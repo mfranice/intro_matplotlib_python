@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     # Alumnos: Se desea graficar cuatro funciones en una misma figura
     # en cuatros gráficos (axes) distintos. Para el siguiente
-    # intervalor de valores de "X":
+    # intervalo de valores de "X":
     x = np.linspace(-10, 10, 40)
 
     # Realizar tres gráficos que representen
@@ -53,5 +53,31 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+
+    fig = plt.figure()
+    fig.suptitle('Ejercicio 4')
+
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
+    ax1.plot(x,y1, color='r', label='y=x^2')
+    ax1.legend()
+    ax1.grid()
+
+    ax2.plot(x,y2, color='b', label='y=x^3')
+    ax2.legend()
+    ax2.grid()
+
+    ax3.plot(x,y3, color='g', label='y=x^4')
+    ax3.legend()
+    ax3.grid()
+
+    ax4.plot(x,y4, color='y', label='y=x^1/2')
+    ax4.legend()
+    ax4.grid()
+
+    plt.show()
 
     print("terminamos")
